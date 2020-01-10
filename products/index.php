@@ -6,7 +6,7 @@ $GLOBALS['_ta_debug_mode'] = false; //To enable debug mode, set to true or load 
 
 require 'bootloader_dcdd1f867cef62dee890df599bdc27c0.php';
 
-$campaign_id = 'n0ck41';//$CloakerConfig->campaign_id;
+$campaign_id = $CloakerConfig->campaign_id;
 
 $ta = new TALoader($campaign_id);
 
