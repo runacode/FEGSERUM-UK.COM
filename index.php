@@ -125,7 +125,7 @@ include_once(dirname(__FILE__) . '/locale/languages.php');
                             <div class="qty">
                                 <!--<span class="qty_title">QT</span>-->
                                 <span class="minus"><span class="fa fa-minus" aria-hidden="true"></span></span>
-                                <input type="number" class="count" name="qty" value="1">
+                                <input type="text" class="count" name="qty" value="1">
                                 <span class="plus"><span class="fa fa-plus" aria-hidden="true"></span></span>
                             </div>
                         </div>
