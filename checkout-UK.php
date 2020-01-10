@@ -289,7 +289,7 @@ $ksdk = new KonnektiveSDK($pageType, $deviceType);
 <?php
 
 $pageEvent = "InitiateCheckout";
-$PixelPage = "/checkout.html?Event=$pageEvent";
+$qs = ["Event"=>$pageEvent];
 include_once('pixelcode/pixelhelper.php');
 
 
