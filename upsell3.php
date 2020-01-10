@@ -120,7 +120,7 @@ $upsell = $ksdk->getProduct((int) $productId);
     </script>
     <?php
 
-    $PixelPage="/upsell.html";
+
     include_once('pixelcode/pixelhelper.php');
 
 
