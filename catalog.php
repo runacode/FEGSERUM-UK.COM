@@ -16,7 +16,7 @@ include 'includes/data.php';
 <html>
 <head>
     <title>
-        <?= T('Feg Serum - Eyelash Enhancer'); ?>
+        <?php echo $product->rand_head ?>
     </title>
 
 <meta name="viewport" content="width=device-width" />
