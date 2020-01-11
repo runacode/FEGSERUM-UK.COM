@@ -12,7 +12,7 @@ $ksdk = new KonnektiveSDK($pageType, $deviceType);
 <html>
 <head>
     <title>
-        Checkout
+        Checkout - Rocket Commerce
     </title>
 
     <meta name="viewport" content="width=device-width"/>
@@ -41,7 +41,7 @@ $ksdk = new KonnektiveSDK($pageType, $deviceType);
         window.product = JSON.parse('<?php echo json_encode($product); ?>');
         window.data = JSON.parse('<?php echo json_encode($data); ?>');
     </script>
-    <script src="/resources/js/cart.js"></script>
+    <script src="/resources/js/cart.min.js"></script>
     <style>body {
             margin: 8px !important;
         }</style>
@@ -268,11 +268,11 @@ $ksdk = new KonnektiveSDK($pageType, $deviceType);
             return;
         }
         $(Object.keys(window.kform.states.GB)).each(function (i, item) {
-            $("[name='city']").append($('<option />').val(window.kform.states.GB).text(window.kform.states.GB[item]))
+            $("[name='city']").append($('<option />').val(window.kform.states.GB[item]).text(window.kform.states.GB[item]))
         })
 
         $(Object.keys(window.kform.states.GB)).each(function (i, item) {
-            $("[name='shipCity']").append($('<option />').val(window.kform.states.GB).text(window.kform.states.GB[item]))
+            $("[name='shipCity']").append($('<option />').val(window.kform.states.GB[item]).text(window.kform.states.GB[item]))
         })
         $("[name='shipCity']").change(function () {
             $("[name='shipState']").val($("[name='shipCity']").val())
