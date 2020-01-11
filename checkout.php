@@ -22,7 +22,7 @@ $ksdk = new KonnektiveSDK($pageType, $deviceType);
 <html>
 <head>
     <title>
-        Checkout
+        Checkout - Rocket Commerce
     </title>
 
     <meta name="viewport" content="width=device-width"/>
@@ -51,7 +51,7 @@ $ksdk = new KonnektiveSDK($pageType, $deviceType);
         window.product = JSON.parse('<?php echo json_encode($product); ?>');
         window.data = JSON.parse('<?php echo json_encode($data); ?>');
     </script>
-    <script src="/resources/js/cart.js"></script>
+    <script src="/resources/js/cart.min.jsjs"></script>
     <style>body {
             margin: 8px !important;
         }</style>
